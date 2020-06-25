@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import {Button} from 'antd';
 
 export class Home extends Component {
   render() {
     return (
       <div>
-        home
+        <Button type="primary">home</Button>
       </div>
     )
   }
