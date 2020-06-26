@@ -1,0 +1,38 @@
+a{
+  text-decoration: none;
+  color: #d5d5d5;
+}
+ul,li{
+  list-style: none;
+}
+.header{
+  width: 100%;
+  background-color: #545652;
+  height: 28px;
+  color: #d5d5d5;
+  font-size: 12px;
+  line-height: 28px;
+  overflow: hidden;
+  .top-nav-doubanapp{
+    width: 120px;
+    float: right;
+    margin-top: -39px;
+    margin-right: 72px;
+  }
+  .top-nav-info{
+    width: 75px;
+    float: right;
+    margin-top: -39px;
+  }
+  .items{
+    margin-left: -35px;
+    ul{
+      li{
+        text-align: center;
+        display: inline-block;
+        vertical-align: baseline;
+        width: 48px;
+      }
+    }
+  }
+}

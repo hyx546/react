@@ -1,0 +1,87 @@
+.db-nav-movie {
+  position: relative;
+  background-color: #f0f3f5;
+  width: 100%;
+  min-width: 1040px;
+  overflow: hidden;
+  zoom: 1;
+  margin-bottom: 40px;
+  .nav-wrap {
+    height: 75px;
+    border-color: #e3ebec;
+    border-bottom: 1px solid #e5ebe4;
+    .nav-primary {
+      width: 1040px;
+      margin: 0 auto;
+      overflow: visible !important;
+      position: relative;
+      padding: 10px 0 5px;
+      zoom: 1;
+      .nav-logo {
+        float: left;
+        height: 56px;
+        width: 145px;
+        margin: 0 13px 0 0;
+        background: url("../../img/lg_movie_a12_2.png") no-repeat 0 12px;
+        a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+          line-height: 100em;
+          &:visited {
+            color: #27a;
+            text-decoration: none;
+          }
+        }
+      }
+      .nav-search {
+        margin-left: 145px;
+        overflow: visible !important;
+        position: relative;
+        zoom: 1;
+        padding: 10px 0 15px 0;
+      }
+    }
+  }
+  .nav-secondarr {
+    width: 1040px;
+    margin: 0 auto;
+    padding-bottom: 0;
+    overflow: hidden;
+    zoom: 1;
+    .nav-items {
+      float: none;
+      zoom: 1;
+      font-size: 14px;
+      ul {
+        margin: 9px 0;
+        li {
+          display: inline;
+          margin-right: 25px;
+          a {
+            &:visited {
+              color: #27a;
+              text-decoration: none;
+            }
+          }
+        }
+      }
+    }
+    .movieannual {
+      position: absolute;
+      width: 186px;
+      height: 96px;
+      top: 10px;
+      left: 50%;
+      margin-left: 200px;
+      background: url("../../img/annual_2019.png") center/contain no-repeat;
+      a {
+        &:visited {
+          color: #27a;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
