@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 
 export default function Counter() {
   const [count, setCount] = useState(0);
@@ -8,6 +8,7 @@ export default function Counter() {
   return (
     <div>
       <button onClick={handleIncrement}>+</button>
+      <div>{count}</div>
     </div>
   );
 }
