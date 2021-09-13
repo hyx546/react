@@ -3,6 +3,7 @@ import React from 'react';
 import HocComp from './hoc/index';
 import Counter from './useCallBack/index';
 import SearchUserList from './useMemo/index';
+import Timer from './useRef/index';
 import './App.css';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       {/* <UserList /> */}
       {/* <HocComp /> */}
       {/* <Counter /> */}
-      <SearchUserList />
+      {/* <SearchUserList /> */}
+      <Timer />
     </div>
   );
 }
