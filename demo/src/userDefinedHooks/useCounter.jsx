@@ -1,12 +1,12 @@
 import { useCallback, useState } from 'react';
-function useCounter() {
+function useCounter(quantity) {
   const [count, setCount] = useState(0);
   const increment = useCallback(() => {
-    setCount(count + 1);
-  }, [count]);
+    setCount(count + quantity);
+  }, [count, quantity]);
   const decrement = useCallback(() => {
-    setCount(count - 1);
-  }, [count]);
+    setCount(count - quantity);
+  }, [count, quantity]);
   const reset = useCallback(() => {
     setCount(0);
   }, []);
