@@ -31,11 +31,9 @@ import React, { useRef, useState, useCallback } from 'react';
 
 export default function Timer() {
   const inputEL = useRef(null);
-
   const onButtonClick = () => {
     // current属性指向了真实的input这个DOM节点，从而可以调用docus方法
     inputEL.current.focus();
-    console.log('----inputEL.current.focus();',inputEL.current.value);
   }
 
   return (
