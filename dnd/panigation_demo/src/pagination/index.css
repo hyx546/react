@@ -1,0 +1,140 @@
+.paginationDiv {
+  color: #535353;
+  line-height: 29px;
+  text-align: center;
+  margin-bottom: -10px;
+  width: 100%;
+  display: flex;
+}
+
+.paginationDiv .pagesDrag {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+}
+
+.paginationDiv a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  padding: 0 7px;
+  vertical-align: middle;
+  text-decoration: none;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgb(217, 217, 217);
+  border-image: initial;
+  border-radius: 4px;
+  margin-right: 8px;
+  cursor: pointer;
+  background: rgb(255, 255, 255);
+}
+
+.paginationDiv .next,
+.paginationDiv .prev {
+  background-color: #f3f4f8;
+  border: 1px solid #e5e5e5;
+  background: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.paginationDiv .fiveNext,
+.paginationDiv .fivePrev {
+  background-color: #f3f4f8;
+  border: none;
+}
+
+.paginationDiv .fiveNext:before,
+.paginationDiv .fivePrev:before {
+  content: '...';
+  font-size: 14px;
+  color: rgba(0, 0, 0, .25);
+}
+
+.paginationDiv .fivePrev:hover::before {
+  content: '<<';
+  font-size: 14px;
+  color: #1890ff;
+}
+
+.paginationDiv .fiveNext:hover::before {
+  content: '>>';
+  font-size: 14px;
+  color: #1890ff;
+}
+
+.paginationDiv .next:hover,
+.paginationDiv .prev:hover {
+  /* background-color: #ddd; */
+  border: 1px solid #ddd;
+  border-color: #337ab7;
+  color: #337ab7;
+}
+
+.paginationDiv .next:before,
+.paginationDiv .prev:before {
+  content: '<';
+  font-size: 14px
+}
+
+.paginationDiv .disable.next,
+.paginationDiv .prev.disable {
+  background-color: #f3f4f8;
+  border-color: #e5e5e5;
+  cursor: no-drop;
+}
+
+.paginationDiv .disable.next:before,
+.paginationDiv .prev.disable:before {
+  color: #a0a0a0;
+  border-color: #337ab7
+}
+
+.paginationDiv .next:before {
+  content: '>';
+}
+
+.paginationDiv .num {
+  margin-left: -1px;
+  padding: 0 7px;
+  border: 1px solid #e5e5e5;
+  color: #707070
+}
+
+.paginationDiv .num.current {
+  border-color: #337ab7;
+  color: #337ab7;
+}
+
+.paginationDiv .num:hover {
+  border-color: #337ab7;
+  color: #337ab7;
+}
+
+.paginationDiv .ellipsis {
+  width: 42px;
+  height: 30px;
+  color: #707070;
+  line-height: 30px
+}
+
+.paginationDiv input {
+  width: 44px;
+  height: 24px;
+  border: 1px solid #eee;
+  text-align: center
+}
+
+.paginationDiv .rightDiv {
+  margin-left: 8px;
+}
+
+.paginationDiv input {
+  width: 50px;
+  height: 32px;
+  border: 1px solid #eee;
+  text-align: center;
+  margin: 0 8px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}
