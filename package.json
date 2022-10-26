@@ -1,0 +1,24 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commit": "git add -A && git-cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyx546/react.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hyx546/react/issues"
+  },
+  "homepage": "https://github.com/hyx546/react#readme",
+  "devDependencies": {
+    "commitizen": "^4.1.2",
+    "cz-conventional-changelog": "^3.2.0"
+  }
+}
