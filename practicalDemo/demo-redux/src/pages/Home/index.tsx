@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
-import { InfoReducerActionEnum, InfoReducerActionType, numberActionEnum } from '../reducers/indexTypes';
 import ChildDemo from './ChildDemo';
+import { InfoReducerActionType, numberActionEnum, InfoReducerActionEnum } from '../reducers/indexTypes';
 
 function Index(props: any) {
     const { number, addNumber, delNumber, info, changeName } = props;
     const [name, setName] = useState('');
-    console.log(11);
-    
+    console.log(props);
+
     return (
         <div>
             展示的数量： {number}
